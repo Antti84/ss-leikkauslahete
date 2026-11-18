@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tulostettava sisäinen lähete.">
+  <title>Sisäinen lähete – tulostus</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #202124;
+      background: #f3f4f6;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 32px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 14px rgba(0,0,0,.08);
+      text-align: center;
+    }
+    h1 { margin: 0 0 12px; font-size: 1.6rem; }
+    p { line-height: 1.5; color: #4b5563; }
+    .actions { margin: 28px 0 12px; }
+    a.button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 7px;
+      background: #155eef;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    a.button:hover { background: #124fc9; }
+    .note { font-size: .9rem; margin-top: 22px; }
+    @media (max-width: 520px) {
+      main { margin: 20px auto; padding: 24px 18px; }
+      a.button { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sisäinen lähete</h1>
+    <p>Avaa alkuperäisen lomakkeen PDF ja tulosta se. Potilaan nimi ja henkilötunnus täydennetään käsin tulosteeseen.</p>
+    <div class="actions">
+      <a class="button" href="assets/lahete.pdf" target="_blank" rel="noopener">
+        Avaa lähete ja tulosta
+      </a>
+    </div>
+    <p class="note">Lomakkeeseen ei syötetä potilastietoja tässä sovelluksessa. Tiedot eivät siirry verkkoon.</p>
+  </main>
+</body>
+</html>
